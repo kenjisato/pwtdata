@@ -2,6 +2,7 @@
 Module contains a set of functions that download the PWT data set.
 """
 from os.path import abspath, join, split
+import gzip
 import pandas as pd
 
 
@@ -81,8 +82,18 @@ pl_n:   Price level of the capital stock, price level of USA in 2017=1
 pl_k:   Price level of the capital services, price level of USA=1"""
 
 
-def load(description=False):
-    if description == False:
-        return pd.read_csv(join(get_path(__file__), "data/raw_data.csv.bz2"), compression="bz2")
+def load(columns=None, description=False):
+    with gzip.open(join(get_path(__file__), "data/pwt100.dta.gz")) as fp:
+        pwt_reader = pd.read_stata(fp, iterator=True)
+
+    if columns is None:
+            columns = pwt_reader.varlist
+
+    if description:
+        var_labels = pwt_reader.variable_labels()
+        labels_df = pd.DataFrame([var_labels[var] for var in columns], 
+                                 index=columns, columns=["Description"])
+        return pwt_reader.read(columns=columns), labels_df
     else:
-        print(var_defitions)
+        return pwt_reader.read(columns=columns)
+    

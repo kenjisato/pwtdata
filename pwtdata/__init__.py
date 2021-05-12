@@ -1,12 +1,12 @@
 """
-Github page: https://github.com/spring-haru/pwtdata
+Github page: https://github.com/kenjisato/pwtdata
 """
 
 from .pwtdata import *
 
 __all__ = ['load']
 
-__author__ = 'Tetsu Haruyama'
-__version__ = '0.2.0'
-__copyright__ = 'Copyright (c) 2021 Tetsu Haruyama'
+__author__ = ['Tetsu Haruyama', 'Kenji Sato']
+__version__ = '0.3.0.9000'
+__copyright__ = 'Copyright (c) 2021 Tetsu Haruyama and Kenji Sato'
 
