@@ -57,6 +57,19 @@ Then, select columns you need and convert them into a pandas dataframe.
 12739        Zambia  2019   56783.714844
 12808      Zimbabwe  2018   43420.898438
 12809      Zimbabwe  2019   40826.570312
+
+[2196 rows x 3 columns]
+```
+
+If you'd like to refer to labels programatically, pass `description=True` to `load()` function.
+
+```
+>>> pwt, desc = pwtdata.load(["country", "year", "rgdpo"], description=True)
+>>> desc
+                                               Description
+country                                       Country name
+year                                                  Year
+rgdpo    Output-side real GDP at chained PPPs (in mil. ...
 ```
 
 ### Reference
