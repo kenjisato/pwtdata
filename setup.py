@@ -3,10 +3,9 @@ import os
 import sys
 from setuptools import find_packages, setup
 
-
 additional_files = []
 for filename in glob.iglob('./pwtdata/**', recursive=True):
-    if '.csv.bz' in filename:
+    if '.dta.gz' in filename:
         additional_files.append(filename.replace('./pwtdata/', ''))
 
 
