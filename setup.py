@@ -11,7 +11,7 @@ for filename in glob.iglob('./pwtdata/**', recursive=True):
 
 setup(
     name='pwtdata',
-    version='0.3.0',
+    version='0.3.1',
     author=['Tetsu Haruyama', 'Kenji Sato'],
     author_email=['haruyama@econ.kobe-u.ac.jp', 'kenji@kenjisato.jp'],
     packages=find_packages(),

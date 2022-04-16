@@ -23,14 +23,14 @@ Import data and learn what variables are contained.
 
 ```
 >>> import pwtdata
->>> print(pwtdata.var_defitions)
+>>> print(pwtdata.var_definitions)
 Variable name:  Variable definition
 
 ----- Identifier variables -----
 countrycode:    3-letter ISO country code
-country:            Country name
+country:        Country name
 currency_unit:  Currency unit
-year:               Year
+year:           Year
 
 ----- Real GDP, employment and population levels -----
 rgdpe:  Expenditure-side real GDP at chained PPPs (in mil. 2017US$),,,

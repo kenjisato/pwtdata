@@ -10,7 +10,7 @@ def get_path(f):
     return split(abspath(f))[0]
 
 
-var_defitions = """\
+var_definitions = """\
 Variable name:	Variable definition
 
 ----- Identifier variables -----
