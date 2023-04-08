@@ -1,6 +1,6 @@
 # `pwtdata`
 
-This module contains Penn World Table 10.0. No more than that.
+This module contains Penn World Table 10.01. No more than that.
 
 You're looking at a fork of https://github.com/spring-haru/pwtdata.git by Tetsu Haruyama. 
 

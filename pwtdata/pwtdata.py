@@ -83,7 +83,7 @@ pl_k:   Price level of the capital services, price level of USA=1"""
 
 
 def load(columns=None, description=False):
-    with gzip.open(join(get_path(__file__), "data/pwt100.dta.gz")) as fp:
+    with gzip.open(join(get_path(__file__), "data/pwt1001.dta.gz")) as fp:
         pwt_reader = pd.read_stata(fp, iterator=True)
 
     if columns is None:

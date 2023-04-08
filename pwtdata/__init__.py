@@ -7,6 +7,6 @@ from .pwtdata import var_definitions, load
 __all__ = ['load']
 
 __author__ = ['Tetsu Haruyama', 'Kenji Sato']
-__version__ = '0.3.1'
+__version__ = '0.3.2'
 __copyright__ = 'Copyright (c) 2021 Tetsu Haruyama and Kenji Sato'
 
